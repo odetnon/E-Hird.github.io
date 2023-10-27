@@ -1,0 +1,62 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5rem 0;
+}
+main#site-content {
+	width: 70%;
+	font-family: "EB Garamond";
+	position: relative;
+}
+
+span#page-title {
+	font-variation-settings: "wght" 950;
+	font-size: 5rem;
+	margin-bottom: 1rem;
+	display: block;
+}
+
+div#helps-container {
+	width: 100%;
+	display: flex;
+	font-size: 1.4rem;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+}
+
+div#introboys {
+	margin-bottom: 2.6rem;
+	font-size: 1.7rem;
+}
+
+div.item-container {
+	width: 95%;
+	margin-bottom: 4rem;
+}
+
+div.item-container>span:nth-child(1) {
+	font-size: 1.5rem;
+	font-variation-settings: "wght" 600;
+}
+
+div#references {
+	margin-top: 0rem;
+	display: flex;
+	flex-direction: column;
+}
+
+div#references > span:nth-child(1) {
+	display: block;
+}
+
+div#references > span:not(:nth-child(1)) {
+	padding-left: 1.5rem;
+}
+
+
+@font-face {
+	font-family: "EB Garamond";
+	src: url("fonts/EBGaramond-VariableFont_wght.ttf")
+}
