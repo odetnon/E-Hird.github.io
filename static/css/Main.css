@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+.navbar {
+    border-bottom: thick double black;
+    margin: 5px;
+}
+
+.navbar, .navbar-collapse, .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.navbar-nav .dropdown-menu {
+    position: absolute;
+}
+
+.nav-item {
+    margin: 5%;
+    font-family: "EB Garamond";
+    font-size: x-large;
+    font-weight: bold;
+}
