@@ -6,6 +6,11 @@
 }
 
 .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: white;
     border-bottom: thick double black;
     margin: 5px;
 }
@@ -26,4 +31,40 @@
     font-family: "EB Garamond";
     font-size: x-large;
     font-weight: bold;
+}
+
+#site-content {
+    margin-top: 100px;
+}
+
+section#card-segment {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    margin: .2rem;
+}
+
+.card-body {
+    display: flex;
+    display: inherit;
+    flex-direction: inherit;
+    justify-content: space-between;
+    > .btn {
+        margin-top: .5rem;
+    }
+}
+
+section#references-segment {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: relative;
+    font-size: small;
+    > div {
+        margin-right: 3rem;
+    }
 }

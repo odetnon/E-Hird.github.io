@@ -6,6 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link href="./static/css/Main.css" rel="stylesheet" type="text/css">
+    <script src="./static/js/clock.js"></script>
 </head> 
 <body>
 
@@ -20,7 +21,7 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                            Dropdown
+                            Pages
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Communication</a></li>
@@ -33,8 +34,76 @@
         </div>
     </nav>
 
-    <main>
-        <img src="./assets/Logo_Full.png" alt="Bene-Computing Full Logo" width="500">
+    <main id="site-content">
+        <section id="title-segment">
+            <img id="logo" src="./assets/Logo_Full.png" alt="Bene-Computing Full Logo" width="500">
+            <span id="tagline">Exploring the Benefits of Computing</span>
+        </section>
+        <section id="intro-segment">
+            <div class="item-container">
+            <span>
+                The first Personal Computer (PC) was created in 1971. Roughly
+            </span>
+            <span id="clock">0d 0hr 0min 0sec</span>
+            <span>
+                ago. Since this time Computers have benefitted many aspects of life and our world.
+            </span>
+            </div>
+            <div class="item-container">
+            <span>
+                BENE-Computing is a website where you can explore the many benefits of computing across several different fields. Join us and learn about how computers have impacted our day-to-day lives through advancements in Communication, Research and Entertainment.
+            </span>
+            </div>
+        </section>
+        <section id="card-segment">
+            <div class="card" style="width: 18rem">
+                <img src="./assets/Comm_Card_img.jpg" class="card-img-top" alt="Communication Page" style="height: 12rem; object-fit: fill;">
+                <div class="card-body">
+                    <span class="card-title">Communication</span>
+                    <span class="card-text">Discover how Computing has enchanced Communication and the benefits that has created!</span>
+                    <a href="#" class="btn btn-primary">Go</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem">
+                <img src="./assets/Res_Card_img.jpg" class="card-img-top" alt="Research Page" style="height: 12rem; object-fit: cover;">
+                <div class="card-body">
+                    <span class="card-title">Research</span>
+                    <span class="card-text">Find out how Computing has made Scientific Research more efficient, accurate and collaboarative!</span>
+                    <a href="./pages/research-benefits.html" class="btn btn-primary">Go</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem">
+                <img src="./assets/Ent_Card_img.jpg" class="card-img-top" alt="Communication Page" style="height: 12rem; object-fit: cover;">
+                <div class="card-body">
+                    <span class="card-title">Communication</span>
+                    <span class="card-text">Learn about how Computing has created new forms of Entertainment for us to enjoy!</span>
+                    <a href="#" class="btn btn-primary">Go</a>
+                </div>
+            </div>
+        </section>
+        <section id="references-segment">
+            <div id="authors">
+                <span>
+                    Authors:
+                </span>
+                <ul id="author-list">
+                    <li>Wilson Arceño</li>
+                    <li>Matthew Garelick</li>
+                    <li>Euan Hird</li>
+                    <li>Yi Zheng</li>
+                </ul>
+            </div>
+            <div id="attributions">
+                <span>
+                    Images:
+                </span>
+                <ul id="image-atrributions">
+                    <li><a href="https://www.freepik.com/free-vector/3d-earth-graphic-symbolizing-global-trade-illustration_14803715.htm#query=network&position=7&from_view=search&track=sph">Image by liuzishan</a> on Freepik</li>
+                    <li>Image by <a href="https://www.freepik.com/free-photo/rpa-concept-with-blurry-hand-touching-screen_23992698.htm#query=network&position=41&from_view=search&track=sph">Freepik</a></li>
+                    <li>Image by <a href="https://www.freepik.com/free-photo/videogamer-winning-first-person-shooter-tournament-using-rgb-keyboard-professional-headphones-pro-player-man-talking-with-other-players-online-game-competition-powerful-computer_15962828.htm#query=entertainment&position=42&from_view=search&track=sph">Freepik</a></li>
+                </ul>
+            </div>
+        </section>
     </main>
 </body>
 </html>
