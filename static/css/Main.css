@@ -26,6 +26,9 @@
 
 .navbar-nav .dropdown-menu {
     position: absolute;
+    > * {
+        background-color: inherit;
+    }
 }
 
 .nav-item {
@@ -51,7 +54,7 @@
     filter: opacity(.9);
 }
 
-section {
+section:not(#references-segment) {
     margin: 2rem;
 }
 
@@ -97,6 +100,12 @@ section {
         font-size: x-large;
         font-weight: 300;
         background-color: inherit;
+    }
+    #author-links {
+        background-color: inherit;
+        > a {
+            margin: 0.2rem;
+        }
     }
 }
 
