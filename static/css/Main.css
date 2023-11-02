@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    margin-top: 0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    border-bottom: thick double black;
+    margin: 5px;
+    margin-top: 0;
+    font-family: "EB Garamond";
+}
+
+.navbar, .navbar-collapse, .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.navbar-nav .dropdown-menu {
+    position: absolute;
+    > * {
+        background-color: inherit;
+    }
+}
+
+.nav-item {
+    margin: 5%;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#site-content {
+    margin-top: 100px;
+}
+
+#title-segment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tagline {
+    font-family: "EB Garamond";
+    font-size: xx-large;
+    font-style: oblique;
+    filter: opacity(.9);
+}
+
+section:not(#references-segment) {
+    margin: 2rem;
+}
+
+.item-container {
+    width: 95%;
+    font-size: large;
+    padding: 2rem;
+}
+
+#card-segment {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    margin: .2rem;
+    border-color: #01b0f0;
+    > .card-body {
+        display: flex;
+        display: inherit;
+        flex-direction: inherit;
+        justify-content: space-between;
+        > .btn {
+            margin-top: .5rem;
+        }
+        > .card-title {
+            font-family: "EB Garamond";
+            font-size: x-large;
+            font-weight: 400;
+        }
+    }
+}
+
+.author-box-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    #author-name {
+        font-family: "EB Garamond";
+        font-size: x-large;
+        font-weight: 300;
+        background-color: inherit;
+    }
+    #author-links {
+        background-color: inherit;
+        > a {
+            margin: 0.2rem;
+        }
+    }
+}
+
+.author-box-body {
+    #author-info{
+        background-color: inherit;
+    }
+}
+
+.btn-icon {
+    background-color: inherit;
+    margin-right: .5rem;
+}
+
+section#references-segment {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: relative;
+    font-size: small;
+    background-color: rgb(186, 209, 255);
+    padding-left: 2rem;
+    padding-top: .5rem;
+    > div{
+        margin-right: 3rem;
+    }
+}
+
+.attribution {
+    background-color: inherit;
+}
+
+@font-face {
+	font-family: "EB Garamond";
+	src: url("fonts/EBGaramond-VariableFont_wght.ttf")
+}

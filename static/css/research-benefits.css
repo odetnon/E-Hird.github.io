@@ -1,26 +1,57 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-align: justify;
+}
+
 body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 5rem 0;
+	background-color: #3a3a39;
+	color: #3a3a39;
 }
+
 main#site-content {
-	width: 70%;
+	width: 70vw;
 	font-family: "EB Garamond";
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	opacity: 1;
+}
+
+main#site-content>section {
+	width: 100%;
+	background-color: #ebebdf;
+	max-width: 1200px;
+	padding: 3.8vw 8vw;
+	border-radius: 15px;
+}
+
+main#site-content>section:not(:nth-child(1)) {
+	margin-top: 2.5rem;
+}
+
+section#helps-segment {
+	padding: 5vw 8vw !important;
 }
 
 span#page-title {
 	font-variation-settings: "wght" 950;
-	font-size: 5rem;
+	font-size: 4.2rem;
 	margin-bottom: 1rem;
 	display: block;
+	text-align: left;
 }
 
 div#helps-container {
-	width: 100%;
 	display: flex;
-	font-size: 1.4rem;
+	font-size: 1.5rem;
 	flex-direction: column;
 	justify-content: start;
 	align-items: center;
@@ -28,12 +59,15 @@ div#helps-container {
 
 div#introboys {
 	margin-bottom: 2.6rem;
-	font-size: 1.7rem;
+	font-size: 1.6rem;
+}
+
+div.item-container:not(:last-child) {
+	margin-bottom: 4rem;
 }
 
 div.item-container {
 	width: 95%;
-	margin-bottom: 4rem;
 }
 
 div.item-container>span:nth-child(1) {
