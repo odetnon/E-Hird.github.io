@@ -2,10 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: #eff5f7;
+    background-color: aliceblue;
     margin-top: 0;
-    font-weight: 700;
-    font-family: "Noah"
 }
 
 .navbar {
@@ -56,22 +54,8 @@
     filter: opacity(.9);
 }
 
-section#title-segment {
-    margin-top: 10rem;
-    margin-bottom: 5rem;
-}
-
-section#intro-segment {
-    text-align:justify;
-}
-
-section#about-the-author {
-    margin-top: 6rem
-}
-
-section:not(#references-segment, #about-the-author) {
-    margin-left: 15rem;
-    margin-right: 15rem;
+section:not(#references-segment) {
+    margin: 2rem;
 }
 
 .item-container {
@@ -84,66 +68,26 @@ section:not(#references-segment, #about-the-author) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 2rem;
-}
-
-.card:not(:first-child) {
-    margin-left: 1rem
-}
-
-.card * {
-    background-color: transparent;
-    cursor: default;
+    justify-content: space-evenly;
 }
 
 .card {
     margin: .2rem;
-    border-color: #22262a;
-    width: 32%;
-    max-width: 450px;
-    border: none;
-    border-radius: 24px;
-    padding: 30px;
-    transition: 100ms ease-out;
-    > .card-img-top {
-        height: 50%;
-        border-radius: 17px;
-    }
+    border-color: #01b0f0;
     > .card-body {
         display: flex;
         display: inherit;
         flex-direction: inherit;
         justify-content: space-between;
         > .btn {
-            margin-top: 1rem;
-            border-radius: 12px;
-            color: #01b0f1;
-            border: 2px solid #01b0f1;
-            font-weight: bold;
-            font-size: 1.4rem;
-            transition: 100ms ease-out;
-        }
-        > .btn:hover {
-            margin-top: 1rem;
-            border-radius: 12px;
-            cursor: pointer;
-            background-color: #01b0f1;
-            filter: brightness(1.1);
-            transform: scale(1.03);
-            color: aliceblue;
-            font-size: 1.4rem;
+            margin-top: .5rem;
         }
         > .card-title {
             font-family: "EB Garamond";
             font-size: x-large;
-            font-weight: 900;
+            font-weight: 400;
         }
-    } 
-}
-
-.card:hover {
-    transform: scale(1.01);
+    }
 }
 
 .author-box-header {
@@ -197,9 +141,4 @@ section#references-segment {
 @font-face {
 	font-family: "EB Garamond";
 	src: url("fonts/EBGaramond-VariableFont_wght.ttf")
-}
-
-@font-face {
-	font-family: "Noah";
-	src: url("fonts/Noah-Bold.ttf")
 }
